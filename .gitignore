@@ -341,3 +341,4 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 RESTBeer/Secrets.cs
+RESTBeer/Secrets.cs
