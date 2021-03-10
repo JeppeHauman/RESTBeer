@@ -7,7 +7,16 @@ using Opgave_1;
 
 namespace RESTBeer.Managers
 {
-    public class BeerManager
+    public interface IBeerManager
+    {
+        List<Beer> GetAll(string name = null, string sortBy = null);
+        Beer GetById(int id);
+        Beer Add(Beer newBeer);
+        Beer Delete(int id);
+        Beer Update(int id, Beer updates);
+    }
+
+    public class BeerManager : IBeerManager
     {
         private static int _nextId = 1;
 

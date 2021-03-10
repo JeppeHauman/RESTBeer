@@ -13,7 +13,7 @@ namespace RESTBeer.Controllers
     [ApiController]
     public class BeersController : ControllerBase
     {
-        private readonly BeerManager _beerManager = new BeerManager();
+        private readonly IBeerManager _beerManager = new BeerManager();
 
         // GET: api/Beers
         [HttpGet]
